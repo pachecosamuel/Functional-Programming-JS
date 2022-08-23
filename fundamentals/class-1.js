@@ -2,7 +2,7 @@
 
 //1° without parameter
 function SayHello() {
-    console.log('Hello, good morning!');
+    console.log('Hello, good morning 1st!');
 }
 SayHello();
 
@@ -14,7 +14,7 @@ function SayHelloTo(name) {
 }
 
 function SayHelloTo2(name) {
-    console.log(`Hello ${name}`);
+    console.log(`Hello, good morning .. ${name}`);
     // Interpolando
 }
 

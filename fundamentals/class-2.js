@@ -23,4 +23,4 @@ let z = 10;
 console.log(`Só um exemplinho: ${z}`);
 
 z = sum;
-console.log(sum(10, 10));
+console.log(z(10, 10));
