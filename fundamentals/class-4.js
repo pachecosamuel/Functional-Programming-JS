@@ -6,7 +6,7 @@
 })(2, 3, 4);
 
 (function (a, b) {
-    let x = 19561
+    let x = 19561.20
     console.log(x);
 })();
 

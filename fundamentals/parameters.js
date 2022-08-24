@@ -13,11 +13,13 @@ function defaultParams(a = 30, b = 20, c = 10) {
     console.log(a, b, c);
 }
 
-/*defaultParams();
+/*
+defaultParams();
 defaultParams(3);
 defaultParams(3, 6);
 defaultParams(3, 6, 9);
 */
+
 
 function logNums(a, ...nums) {
     console.log(`O 1° valor é: ${a} e o restante: ${nums}`);
@@ -32,6 +34,7 @@ function logNumsV2(a, ...nums) {
 }
 logNumsV2(3, 5, 7, 9);
 
+
 function sumAll(...nums) {
     let total = 0;
     for (let x of nums) {
@@ -40,6 +43,7 @@ function sumAll(...nums) {
     return total;
 }
 console.log(sumAll(2, 5, 9));
+
 
 const Somar = (...nums) => {
     console.log(Array.isArray(nums));
