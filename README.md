@@ -1,5 +1,6 @@
 # Functional-Programming-JS
 ## Samuel Pacheco 
+### https://www.cod3r.com.br/courses/javascript-funcional-fundamentos
 
 Since the emergence of the procedural paradigm, functions are protagonists in software development. Due to its importance and excellence in the development process, functions today have a programming paradigm all thought around themselves, functional programming.
 
