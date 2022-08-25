@@ -1,7 +1,7 @@
 const numbers = [1, 2, 3, 4, 5, 6];
 
 const greaterThanZero = (el) => el > 0;
-const greaterThanFive = (el) => el > 5;
+const greaterThanFive = (el) => el >= 5;
 const even = (el) => el % 2 === 0;
 const odd = (el) => el % 2 != 0;
 
@@ -19,5 +19,6 @@ const students = [
 ];
 
 const greatStudent = (elem) => elem.score >= 9.0;
+console.log("Estudantes com nota > 9");
 console.log(students.filter(greatStudent));
 console.log(students);

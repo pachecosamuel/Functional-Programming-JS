@@ -14,8 +14,7 @@ const students = [
 const getScore = (elem) => elem.score;
 const result = students.map(getScore)
 
-
-const notinha = students.map(el => el.score * 0.8 + 10)
+const notinha = students.map(el => el.score)
 
 console.log(students, notinha);
 // const result = students.map(getScore)

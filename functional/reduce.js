@@ -1,6 +1,11 @@
 const numbers = [2, 4, 6, 8, 10];
 
 const sum = (total, elem) => total + elem;
+
+const multiply = (total, el) => total * el;
+
+console.log(numbers.reduce((whole, element) => (whole + element) * 2));
+
 const totalSoma = numbers.reduce((total, elem) => total + elem);
 console.log(totalSoma);
 
@@ -21,12 +26,4 @@ const avg = (acc, el, i, array) => {
     }
 }
 
-console.log(numbers.reduce(avg));
-
-// const average = (acc, elem, i, array) => {
-//     if (i === array.length -1) {
-//         return (acc + el) / array.length
-//     } else {
-//         return acc + el
-//     }
-// }
+console.log("Média do papai: " + numbers.reduce(avg));
