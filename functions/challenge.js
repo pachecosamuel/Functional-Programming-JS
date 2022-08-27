@@ -1,6 +1,6 @@
 // 1° Develop a function that receive 3 params and return their sum
 
-/*const soma = (a) => {
+const soma = (a) => {
     return (b) => {
         return (c) => {
             return a + b + c;
@@ -8,16 +8,22 @@
     }
 }
 
+const soma2 = a => b => c => a + b + c;
+const somaDois = (a) => (b) => (c) => a + b + c;
+console.log(somaDois(10)(20)(10));
+
+
 console.log(soma(2)(3)(5));
 
 const um = soma(10);
 const dois = um(20);
 const tres = dois(30);
-console.log(tres);*/
+console.log(tres);
 
 // 2° Develop a function that receive 2 params and return a function
 // that it'll calculate a math operation among them.
 
+// Primeira resolução
 function params(x) {
     return function (y) {
         return function (fn) {
@@ -26,6 +32,7 @@ function params(x) {
     }
 }
 
+// Segunda resolução
 const calculate = (a) => {
     return (b) => {
         return (fn) => {
@@ -34,13 +41,15 @@ const calculate = (a) => {
     }
 }
 
-function multiply(j, k) {
-    return j * k
-};
+// Terceira resolução
+const parametros = (a) => (b) => (fn) => fn(a, b);
 
-const operate = (x, y) => x / y;
+const multiply = (j, k) => j * k;
+const division = (x, y) => x / y;
 
-console.log(calculate(1000)(2)(operate));
+console.log(parametros(15)(5)(division));
+
+console.log(calculate(1000)(2)(division));
 
 const result = params(10)(5)(multiply);
 console.log(result);
