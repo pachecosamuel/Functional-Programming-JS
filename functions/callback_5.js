@@ -12,7 +12,6 @@ const f2 = (acc, el) => acc + el;
 const totalGeral = Carrinho.map(f1).reduce(f2);
 console.log(totalGeral);
 
-
 Array.prototype.myReduce = function (fn, inicial) {
     let acc = inicial;
 
