@@ -1,6 +1,6 @@
 function gerarNumerosEntre(min, max) {
     if (min > max) {
-        [max, min] = [min, max] //Desestruturação 
+        [max, min] = [min, max] //Desestruturação a,b = b,a
     }
 
     return new Promise(resolve => {
@@ -9,6 +9,8 @@ function gerarNumerosEntre(min, max) {
         resolve(aleatorio)
     })
 }
+
+// console.log(gerarNumerosEntre(10, 100));
 
 gerarNumerosEntre(1, 60)
     .then(num => num * 10)

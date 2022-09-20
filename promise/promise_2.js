@@ -12,7 +12,7 @@
 
 function waitFor(time = 2000) {
 
-    return new Promise(function (resolve) {
+    return new Promise(function (resolve, reject) {
         setTimeout(function () {
             console.log("Executando promise");
             resolve("Muita treta vish");
@@ -21,5 +21,5 @@ function waitFor(time = 2000) {
 }
 
 waitFor()
-    .then(() => waitFor())
-    .then(waitFor)
+    .then(console.log)
+    // .then(console.log)

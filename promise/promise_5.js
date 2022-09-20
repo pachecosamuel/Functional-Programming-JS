@@ -4,7 +4,7 @@ function funcionarOuNao(valor, chanceErro) {
 
         try {
             if (Math.random() < chanceErro) {
-                sol.log("rs")
+                console.log("rs")
                 reject("A error has happend");
             } else {
                 resolve(valor);
@@ -17,9 +17,8 @@ function funcionarOuNao(valor, chanceErro) {
 };
 
 funcionarOuNao("I'm gonna make a test", 0.5)
-    .then(v => `Valor: ${v}`)
     .then(
-        v => consol.log(v),
+        v => console.log(v),
         err => console.log(`Erro específico: ${err}`)
     )
     .catch(err => console.log(`Erro geral: ${err}`))
